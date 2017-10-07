@@ -1,1 +1,1 @@
-# pippinhio.github.io
+[link to thesis](thesis.pdf)
