@@ -1,0 +1,84 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional //EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="mkd2html 2.1.7 DL=BOTH ID-ANCHOR GITHUB-TAGS FENCED-CODE">
+  <meta http-equiv="Content-Type"
+        content="text/html; charset-us-ascii"></head>
+<body>
+<p>In my <a href="({{%20%22/assets/thesis.pdf%22%20|%20absolute_url%20}}">PhD thesis</a>) I developed a fast numerical method to compute Stokes flow in 3D that is periodic in two directions. <a href="https://github.com/pippinhio/doubly-periodic-flow">Here</a> is a Python implementation of my method for you to play with.</p>
+
+<h3>Why Stokes flow?</h3>
+
+<p>We are interested in flows where the length-scales are tiny (e.g. in the human lungs or in micro sensors).</p>
+
+<h3>Why 3D?</h3>
+
+<p>Stokes equation behaves weirdly in two dimension (see for instance <a href="https://en.wikipedia.org/wiki/Stokes%27_paradox">Stokes paradox</a>). Also, the world is three-dimensional anyway.</p>
+
+<h3>Why doubly-periodic?</h3>
+
+<p>Ultimately we want to compute flows created by carpets of <em>cilia</em>. Cilia are hair-like structures that attach to the surfaces of cells and move the surrounding fluid through coordinated beating. Such carpets typically have hundreds or even thousands of cilia but we will only simulate a few. We then tell the flow to be periodic in two directions. That has the same effect as modelling thousands of cilia but is of course a lot quicker to compute.</p>
+
+<h3>Example</h3>
+
+<p>The following two videos show how cilia transport particles. In the first one all cilia beat in perfect syncrony. In the second one the cilia perform the same motion as in the first video but the cilia all started at different times. That creates a so-called <em>metachronal wave</em> and makes particle transport more efficient. We ran our computations in 3D but only show a 2D cross section of our results. Things are just easier to visualize that way.</p>
+
+<p>The way each individual cilium beats is modeled after the motion of cilia in the human lungs. However, in the human lungs cilia are packed much more densely as in this simulation.</p>
+
+<iframe width="260" height="192" src="https://www.youtube.com/embed/G-ijbQ5JpDI" frameborder="0" allowfullscreen></iframe>
+
+
+<iframe width="260" height="192" src="https://www.youtube.com/embed/N_VUVXhdsu0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!--![My helpful screenshot]({{ "/assets/stokeslet_free_no-img_new.jpg" | absolute_url }})-->
+
+
+<!--![My helpful screenshot]({{ "/assets/stokeslet_free_img_new.jpg" | absolute_url }})-->
+
+
+<!--![My helpful screenshot]({{ "/assets/stokeslet_dp_no-img_new.jpg" | absolute_url }})-->
+
+
+<!--![My helpful screenshot]({{ "/assets/stokeslet_dp_img_new.jpg" | absolute_url }})-->
+
+
+<h3>Resources</h3>
+
+<p>Here&rsquo;s a copy of my thesis with many useful links:</p>
+
+<ul>
+<li><a href="{{%20%22/assets/thesis.pdf%22%20|%20absolute_url%20}}">A Numerical Method for Doubly-Periodic Stokes Flow in
+3D with and without a Bounding Plane</a>.</li>
+</ul>
+
+
+<p>If you want to recreate any data or figures from my thesis or you would like to solve your own fluid problem, check out the source code:</p>
+
+<ul>
+<li><a href="https://github.com/pippinhio/doubly-periodic-flow">Source code on GitHub</a>.</li>
+</ul>
+
+
+<p>Finally, here are the papers I published with my advisor Ricardo Cortez:</p>
+
+<ul>
+<li><p><a href="http://dx.doi.org/10.1016/j.jcp.2013.10.032"><em>A fast numerical method for computing doubly-priodic regularized Stokes flow in 3D.</em>
+Journal of Computational Physics, 258:1-14, 2014</a>.</p></li>
+<li><p><a href="http://dx.doi.org/10.4208/cicp.OA-2016-0151"><em>Numerical Computation of Doubly-Periodic Stokes Flow Bounded by a Plane with Applications to Nodal Cilia.</em>
+Communications in Computational Physics, 22:620-642, 2017</a>.</p></li>
+</ul>
+
+
+<hr />
+
+<p><img src="{{%20%22/assets/nodal_fancy-cropped.jpg%22%20|%20absolute_url%20}}" alt="My helpful screenshot" /></p>
+
+<!--Particle transport by a nodal cillium after three rotations.-->
+
+
+
+</body>
+</html>
